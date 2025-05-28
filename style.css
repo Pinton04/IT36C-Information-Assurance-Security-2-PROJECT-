@@ -1,0 +1,89 @@
+/* General Body and Container */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('https://www.transparenttextures.com/patterns/diamond-upholstery.png'), #fef6f6;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: #2c2c2c;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 25px 35px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.15);
+  border-top: 6px solid #dc3545; /* Rescue red */
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  color: #b22222;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+/* Inputs and Buttons */
+input, textarea, select, button {
+  display: block;
+  width: 100%;
+  margin: 10px 0 20px 0;
+  padding: 12px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #ff5733;
+  outline: none;
+}
+
+button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #c82333;
+  transform: scale(1.02);
+}
+
+/* Incident List and Admin Panel Styles */
+#incidentList div, #adminPanel div {
+  background: #fff9f9;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-left: 5px solid #ff6b6b;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Business Impact Report */
+#biaReport {
+  background-color: #fff3cd;
+  border-left: 5px solid #ffc107;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+  color: #856404;
+  font-weight: 600;
+  min-height: 50px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px 20px;
+    margin: 20px;
+  }
+}
